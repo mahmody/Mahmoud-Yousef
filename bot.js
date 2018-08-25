@@ -16,20 +16,6 @@ client.login(process.env.BOT_TOKEN);  //لا تحط التوكن حقك هنا
 
 
 
-
-const Discord = require("discord.js");
-const client = new Discord.Client();
-
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
-
-client.on('message', msg => {
-  if (msg.content === 'ping') {
-    msg.reply('Pong!');
-  }
-});
-
 client.on('ready',  () => {
   console.log('By : Mahmoud Youssef ');
   console.log(`Logged in as * [ " ${client.user.username} " ] servers! [ " ${client.guilds.size} " ]`);
@@ -1459,5 +1445,3 @@ const pubg = [
    message.react("??")
  }
 });
-
-client.login('NDc4NjI4ODQ2MDYxNDg2MDgx.DlRJ-w.dWOo8xTeoTWt6_94ol425DS3ljk')
