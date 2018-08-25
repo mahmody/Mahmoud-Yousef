@@ -15,7 +15,7 @@ client.on('message', msg => {
 client.login(process.env.BOT_TOKEN);  //لا تحط التوكن حقك هنا
 
 client.on("message", message => {
-    var prefix = "$";
+    var prefix = "%";
  
             var args = message.content.substring(prefix.length).split(" ");
             if (message.content.startsWith(prefix + "clear")) {
@@ -33,3 +33,22 @@ client.on("message", message => {
         }
       }}).then(msg => {msg.delete(3000)});
                           }
+
+
+});
+
+
+client.on('ready',  () => {
+  console.log('~~~~~~~~~~~~'); 
+  console.log('by Mahmoud');
+  console.log('~~~~~~~~~~~~');
+  console.log(Logged in as  * [ " ${client.user.username} " ] servers! [ " ${client.guilds.size} " ]);
+  console.log('~~~~~~~~~~~~~~');
+  console.log('is online')
+client.user.setStatus("dnd");
+});
+
+// playing
+client.on('ready', () => {
+client.user.setGame($help |By Mahmoud,'https://www.twitch.tv/tarikrs%27);                                                                                                                                                                                                                                                                                                                                                                                                                             client.user.setGame(%help |By Maestro,'https://www.twitch.tv/v5bz%27);
+});
