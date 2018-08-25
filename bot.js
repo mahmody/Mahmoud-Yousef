@@ -15,7 +15,7 @@ client.on('message', msg => {
 client.login(process.env.BOT_TOKEN);  //لا تحط التوكن حقك هنا
 
 client.on("message", message => {
-    var prefix = "%";
+    var prefix = "$";
  
             var args = message.content.substring(prefix.length).split(" ");
             if (message.content.startsWith(prefix + "clear")) {
@@ -29,7 +29,7 @@ client.on("message", message => {
         color: 0x06DF00,
         description: "تم مسح الرسائل ",
         footer: {
-          text: "Maestr©"
+          text: "Mahmoud ツ"
         }
       }}).then(msg => {msg.delete(3000)});
                           }
