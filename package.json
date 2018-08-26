@@ -25,6 +25,7 @@
     "request": "^2.85.0",
     "pretty-ms": "^3.2.0",
     "random-number": "^0.0.9",
+    "gif-search": "2.0.1",
     "simple-youtube-api": "^5.0.2",
     "snekfetch": "^3.6.4",
     "sqlite": "^2.9.1",
@@ -37,4 +38,3 @@
   }
 }
 
-"gif-search": "2.0.1",
