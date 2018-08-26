@@ -50,7 +50,7 @@ client.on("message", message => {
   message.channel.sendMessage({embed});
 
  }
-});F
+});
 
 
 
