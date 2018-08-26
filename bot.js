@@ -1451,6 +1451,10 @@ const pubg = [
 
 
 
+const Discord = require('discord.js');
+
+const Util = require('discord.js');
+
 const getYoutubeID = require('get-youtube-id');
 
 const fetchVideoInfo = require('youtube-info');
@@ -1469,7 +1473,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "$";
+const prefix = "!";
 /////////////////////////
 ////////////////////////
 
@@ -1789,5 +1793,4 @@ client.on('message', message => {
         .setFooter('المزيد قريبا ان شاء الله!')
       message.channel.send(helpEmbed);
     }
-
-	
+});
