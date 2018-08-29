@@ -1,5 +1,11 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+client.on('ready', () => {
+  client.user.setGame(`on 15 servers | $help | $invite .`,'https://www.twitch.tv/v5bz');
+  console.log('---------------');
+  console.log(' Bot Is Online')
+  console.log('---------------')
+});
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
