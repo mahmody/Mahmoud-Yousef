@@ -846,7 +846,7 @@ client.on("message", message => {
 
 
  client.on('guildMemberAdd', member => {
-  const channel = member.guild.channels.find('name', '𝗪𝗘𝗟𝗖𝗢𝗠𝗘');
+  const channel = member.guild.channels.find('name', 'welcome');
   if (!channel) return;
   channel.send(`***بكل حب واحترام وشوق نستقبلك ونتمنى لك قضآء أجمل اللحظات ولآوقات معنا حياك الله***, ${member}`);
   
