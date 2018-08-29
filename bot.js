@@ -30,7 +30,7 @@ client.on("message", message => {
    message.react("😜")
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .addField("『League | League <3』 『League』", true)
+      .addField("『Tiger | Tiger <3』 『Tiger』", true)
       
       .addField("『مصمم البوت Mahmoud Youssef#5434』", true)
       
@@ -42,9 +42,9 @@ client.on("message", message => {
       
       .addField("『🤑』『قريبا سوف نضيف المزيد و المزيد من الاوامر 』『😉』", true)
      
-     .addField("『🤑』『『%لوخيروك^^^』^^^』:open_mouth:『للالعاب』:thermometer_face:』『😉』", true)
+     .addField("『🤑』『『$لوخيروك^^^』^^^』:open_mouth:『للالعاب』:thermometer_face:』『😉』", true)
   
-     .addField("『🤑』『『『%pubg^^^』^^^』:open_mouth:『للالعاب』:thermometer_face:』『😉』", true)
+     .addField("『🤑』『『『$pubg^^^』^^^』:open_mouth:『للالعاب』:thermometer_face:』『😉』", true)
   
  
   message.channel.sendMessage({embed});
@@ -855,7 +855,7 @@ client.on("message", message => {
 client.on('message', message => {
   if (true) {
 if (message.content === '$support') {
-      message.author.send(' |https://discord.gg/T4Q7vXP| لـ أي استفسار').catch(e => console.log(e.stack));
+      message.author.send(' |Mahmoud Youssef#5434| لـ أي استفسار').catch(e => console.log(e.stack));
 
     }
    } 
