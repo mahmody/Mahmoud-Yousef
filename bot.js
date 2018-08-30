@@ -986,13 +986,6 @@ client.on('message', message => {
   }
 });
  
-client.user.setGame(`on 15 servers | $help | $invite .`,'https://www.twitch.tv/v5bz');
-  console.log('---------------');
-  console.log(' Bot Is Online')
-  console.log('---------------')
-});
-
-  
 client.on('message', message => {
  if (message.content.startsWith("ترحيب 2")) {
                                  var mentionned = message.mentions.users.first();
