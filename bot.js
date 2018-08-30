@@ -36,7 +36,7 @@ client.on("message", message => {
    message.react("😜")
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .addField("『Tiger | Tiger <3』 『Tiger』", true)
+      .addField("『League | League <3』 『League』", true)
       
       .addField("『مصمم البوت Mahmoud Youssef#5434』", true)
       
@@ -986,6 +986,12 @@ client.on('message', message => {
   }
 });
  
+client.user.setGame(`on 15 servers | $help | $invite .`,'https://www.twitch.tv/v5bz');
+  console.log('---------------');
+  console.log(' Bot Is Online')
+  console.log('---------------')
+});
+
   
 client.on('message', message => {
  if (message.content.startsWith("ترحيب 2")) {
