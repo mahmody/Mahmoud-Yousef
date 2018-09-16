@@ -21,7 +21,7 @@ client.login(process.env.BOT_TOKEN);  //لا تحط التوكن حقك هنا
 
 
 client.on('ready',  () => {
-  console.log('By : Mahmoud Youssef ');
+  console.log('By : ! ℳ𝒜ℋℳ𝒪𝒰𝒟 ♕♕💎♕♕#5434 ');
   console.log(`Logged in as * [ " ${client.user.username} " ] servers! [ " ${client.guilds.size} " ]`);
   console.log(`Logged in as * [ " ${client.user.username} " ] Users! [ " ${client.users.size} " ]`);
   console.log(`Logged in as * [ " ${client.user.username} " ] channels! [ " ${client.channels.size} " ]`);
@@ -38,7 +38,7 @@ client.on("message", message => {
       .setColor("RANDOM")
       .addField("『League | League <3』 『League』", true)
       
-      .addField("『مصمم البوت Mahmoud Youssef#5434』", true)
+      .addField("『مصمم البوت ! ℳ𝒜ℋℳ𝒪𝒰𝒟 ♕♕💎♕♕#5434』", true)
       
       .addField("『$help』😘『اذا تبي جميع الاوامر مع اوامر اضافية』😵", true)
       
@@ -372,7 +372,7 @@ $invite | القسم الاول لي اضافه البوت
 
 $support| القسم الثاني  الدعم الفني و المساعدة
 
-القسم الثالث مصمم البوت | Mahmoud Youssef#5434
+القسم الثالث مصمم البوت | ! ℳ𝒜ℋℳ𝒪𝒰𝒟 ♕♕💎♕♕#5434
 
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
 
@@ -430,7 +430,7 @@ client.on("message", message => {
 $invite | القسم الاول لي اضافه البوت 
 
 $support| القسم الثاني  الدعم الفني و المساعدة
-قسم الثالث مصمم البوت Mahmoud Youssef#5434
+قسم الثالث مصمم البوت ! ℳ𝒜ℋℳ𝒪𝒰𝒟 ♕♕💎♕♕#5434
 
 
 
@@ -489,7 +489,8 @@ $invite | القسم الاول لي اضافه البوت
 
 $support| القسم الثاني  الدعم الفني و المساعدة
 
-القسم الثالث مصمم البوت | Mahmoud Youssef#5434
+القسم الثالث مصمم البوت | ! ℳ𝒜ℋℳ𝒪𝒰𝒟 ♕♕💎♕♕#5434
+
 
 
 `)
@@ -861,7 +862,7 @@ client.on("message", message => {
 client.on('message', message => {
   if (true) {
 if (message.content === '$support') {
-      message.author.send(' |Mahmoud Youssef#5434| لـ أي استفسار').catch(e => console.log(e.stack));
+      message.author.send(' ! ℳ𝒜ℋℳ𝒪𝒰𝒟 ♕♕💎♕♕#5434| لـ أي استفسار').catch(e => console.log(e.stack));
 
     }
    } 
@@ -1796,7 +1797,7 @@ client.on('message', message => {
 
 client.on('ready', function(){
     var ms = 10000 ;
-    var setGame = ['$help-$invite'];
+    var setGame = [' $help ','$invite | $play (Music)','$support ','$help^^','$help^^^'];
     var i = -1;
     var j = 0;
     setInterval(function (){
