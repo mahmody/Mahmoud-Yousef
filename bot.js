@@ -1796,7 +1796,7 @@ client.on('message', message => {
 
 client.on('ready', function(){
     var ms = 10000 ;
-    var setGame = [' الكلمة 1 ','الكلمة 2 | الكلمة 3','الكلمة 4 ','الكلمة 5','الكلمة 6'];
+    var setGame = ['$help-$invite '];
     var i = -1;
     var j = 0;
     setInterval(function (){
