@@ -47,11 +47,6 @@ client.on("message", message => {
       .addField("『$help^^^』😮『اذا تبي  الاوامر الادارية』🤒", true)
       
       .addField("『🤑』『قريبا سوف نضيف المزيد و المزيد من الاوامر 』『😉』", true)
-     
-     .addField("『🤑』『『$لوخيروك^^^』^^^』:open_mouth:『للالعاب』:thermometer_face:』『😉』", true)
-  
-     .addField("『🤑』『『『$pubg^^^』^^^』:open_mouth:『للالعاب』:thermometer_face:』『😉』", true)
-  
  
   message.channel.sendMessage({embed});
 
@@ -1811,4 +1806,27 @@ client.on('ready', function(){
         client.user.setGame(setGame[i],`https://www.twitch.tv/n3k4a`);
     }, ms);
 
+});
+
+client.on("message", message => {
+             
+     if(!message.channel.guild) return;
+
+ if (message.content === "$help") {
+   message.react("😜")
+  const embed = new Discord.RichEmbed()
+      .setColor("RANDOM")
+      .addField("『League | League <3』 『League』", true)
+      
+      .addField("『مصمم البوت ! ℳ𝒜ℋℳ𝒪𝒰𝒟 ♕♕💎♕♕#5434』", true)
+      
+      .addField("『$لوخيروك』😘『لعبه لو خيروك عباره عن سؤال وانت بتجاوب عليه بكل صراحه$』😵", true)
+      
+       .addField("『مريم』👻『اذا تبي الاوامر العامة$』😳", true)
+      
+      .addField("『🤑』『قريبا سوف نضيف المزيد و المزيد من الالعاب 』『😉』", true)
+     
+  message.channel.sendMessage({embed});
+
+ }
 });
