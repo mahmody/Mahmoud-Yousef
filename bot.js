@@ -47,6 +47,7 @@ client.on("message", message => {
       .addField("『$help^^^』😮『اذا تبي  الاوامر الادارية』🤒", true)
       
       .addField("『🤑』『قريبا سوف نضيف المزيد و المزيد من الاوامر 』『😉』", true)
+      .addField("『$games』😮『اذا تبي  الاوامر الالعاب』🤒", true)
  
   message.channel.sendMessage({embed});
 
@@ -1812,7 +1813,7 @@ client.on("message", message => {
              
      if(!message.channel.guild) return;
 
- if (message.content === "$help") {
+ if (message.content === "$games") {
    message.react("😜")
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
