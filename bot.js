@@ -1840,7 +1840,6 @@ hero.on('message',async message => {
  
   const args = message.content.split(' ');
   const credits = require('./src/credits.json');
-  const path = './src/credits.json';
   const mention = message.mentions.users.first() || hero.users.get(args[1]) || message.author;
   const mentionn = message.mentions.users.first() || hero.users.get(args[1]);
   const author = message.author.id;
