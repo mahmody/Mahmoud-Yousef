@@ -1886,7 +1886,7 @@ client.on('message', async message => {
 client.on('message',async msg => {
      if(msg.channel.type === "dm") return;
   if(msg.author.bot) return;
-  var p = "$";
+  var p = "?";
   if(msg.content.startsWith(p + "setstats")) {
   if(!msg.guild.member(msg.author).hasPermissions('MANAGE_CHANNELS')) return msg.reply('❌ **go play minecraft**');
   if(!msg.guild.member(client.user).hasPermissions(['MANAGE_CHANNELS'])) return msg.reply('❌ **البوت لا يمتلك صلاحية**');
@@ -1914,7 +1914,7 @@ client.on('message',async msg => {
       var currentTime = new Date(),
 hours = currentTime.getHours() + 3 ,
 minutes = currentTime.getMinutes(),
-Seconds = currentTime.getSeconds(),//
+Seconds = currentTime.getSeconds(),//حقوق دايموند كودز
 Year = currentTime.getFullYear(),
 Month = currentTime.getMonth() + 1,
 Dat = currentTime.getDate()
@@ -1924,8 +1924,8 @@ minutes = "0" + minutes;
 var suffix = "AM";
 if (hours >= 12) {
 suffix = "PM";
-hours = hours - 12;//
+hours = hours - 12;//جميع الحقوق محفوظة
 }
 if (hours == 0) {
 hours = 12;
-});
+}
