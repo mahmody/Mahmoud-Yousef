@@ -1883,7 +1883,7 @@ client.on('message', async message => {
     }
 });
 
-const adminprefix = "-v";
+const adminprefix = "$";
 const devs = ['330254844256452619','ايدي الاونر الثاني'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
