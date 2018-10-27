@@ -1822,9 +1822,9 @@ client.on("message", message => {
       .addField("『$لوخيروك』😘『لعبه لو خيروك عباره عن سؤال وانت بتجاوب عليه بكل صراحه$』😵", true)
       
        .addField("『مريم』👻『اذا تبي الاوامر العامة$』😳", true)
-       .addField("『🤑』『لعبه Pubg المشهوره والمعروفه عباره عن سؤال وانت بتجاول عليه 』『$pubg』", true) 
+       .addField("『🤑』『لعبه Pubg المشهوره والمعروفه عباره عن سؤال وانت بتجاول عليه♥♥ 』『$pubg』", true) 
   
-       .addField("『🤑』『لعبه ماين كرافت ترسل لك شكل اسكن بحظك 』『$mcskin』", true)
+       .addField("『🤑』『قم بكتابه اسم الاسكن هيطلع لك الاسكن في لعبه ماين كرافت ♥♥ 』『$mcskin』", true)
   
        .addField("『🤑』『قريبا سوف نضيف المزيد و المزيد من الالعاب 』『😉』", true)
      
@@ -2197,7 +2197,7 @@ client.on('message',async message => {
     });
 
 client.on("message", msg => {
-var prefix = "$";//البرفكس
+var prefix = "$"
 let args = msg.content.split(" ").slice(2);
 let men = msg.mentions.users.first();
 var all = msg.content.split(" ").slice(1) - msg.mentions.users.first();
@@ -2212,6 +2212,7 @@ men.sendMessage(embed);
 
 }
 });
+
 client.on("message", message => {
     var prefix = "$"
     if (!message.content.startsWith(prefix)) return;
