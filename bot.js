@@ -416,6 +416,8 @@ client.on("message", message => {
 
 👑$rooms 『لمعرفه عدد رومات السيرفر』
 
+👑$say-to 『لارسال رساله لشخص معين 』
+
 
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
 
@@ -1820,9 +1822,11 @@ client.on("message", message => {
       .addField("『$لوخيروك』😘『لعبه لو خيروك عباره عن سؤال وانت بتجاوب عليه بكل صراحه$』😵", true)
       
        .addField("『مريم』👻『اذا تبي الاوامر العامة$』😳", true)
-       .addField("『🤑』『لعبه Pubg المشهوره والمعروفه عباره عن سؤال وانت بتجاول عليه 』『$pubg』", true)
-      
-      .addField("『🤑』『قريبا سوف نضيف المزيد و المزيد من الالعاب 』『😉』", true)
+       .addField("『🤑』『لعبه Pubg المشهوره والمعروفه عباره عن سؤال وانت بتجاول عليه 』『$pubg』", true) 
+  
+       .addField("『🤑』『لعبه ماين كرافت ترسل لك شكل اسكن بحظك 』『$mcskin』", true)
+  
+       .addField("『🤑』『قريبا سوف نضيف المزيد و المزيد من الالعاب 』『😉』", true)
      
   message.channel.sendMessage({embed});
 
@@ -2191,3 +2195,33 @@ client.on('message',async message => {
       });
       }
     });
+
+client.on("message", msg => {
+var prefix = "$";//البرفكس
+let args = msg.content.split(" ").slice(2);
+let men = msg.mentions.users.first();
+var all = msg.content.split(" ").slice(1) - msg.mentions.users.first();
+if(msg.content.startsWith(prefix + "say-to")) {
+msg.channel.send(`تم الارساله الى ${men}`)
+let embed = new Discord.RichEmbed()
+.setTitle("Message!!!!")
+.addField("Sender", msg.author.tag, true)
+.addField("Guild", msg.guild.name, true)
+.addField(`Message`,`${args}`,  true)
+men.sendMessage(embed);
+
+}
+});
+client.on("message", message => {
+    var prefix = "$"
+    if (!message.content.startsWith(prefix)) return;
+      let command = message.content.split(" ")[0];
+      command = command.slice(prefix.length);
+        if(command === "mcskin") {
+                const args = message.content.split(" ").slice(1).join(" ")
+        if (!args) return message.channel.send("** اكتب اسم اسكنك **");
+        const image = new Discord.Attachment(`https://minotar.net/armor/body/${args}`, "skin.png");
+    message.channel.send(image)
+        }
+    });
+
