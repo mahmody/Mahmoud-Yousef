@@ -2174,15 +2174,6 @@ client.on("message", message => {
 };     
 });
 
-client.on('message', message => {
-    if(message.content.startsWith('$sa')) {
-    let args = message.content.split(' ').slice(1);
-    let ar = args.join(' ');
-
-    message.channel.send(ar,{tts:true});
-}
-});
-
 client.on('message', function(message) {
     if (!message.member.hasPermissions(['ADMINISTRATOR'])){
             let command = message.content.split(" ")[0];
