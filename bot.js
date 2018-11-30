@@ -2157,7 +2157,7 @@ client.on('message', message => {
                                                     .setThumbnail(message.author.avatarURL)
                                                     .setFooter(message.author.username, message.author.avatarURL)
                                                     message.channel.sendEmbed(embed);}
-                                                  });
+});
 var prefix = "$";
 
 client.on("message", message => {
