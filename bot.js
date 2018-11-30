@@ -2108,20 +2108,6 @@ client.on("message", message => {
       }
   });
 
-client.on('message', function(message) {
-    if (message.channel.type === "dm") {
-        if (message.author.id === client.user.id) return;
-        var iiMo = new Discord.RichEmbed()
-        .setColor('RANDOM')
-        .setTimestamp()
-        .setTitle('``I have received a new DM !``')
-        .setThumbnail(`${message.author.avatarURL}`)
-        .setDescription(`\n\n\`\`\`${message.content}\`\`\``)
-        .setFooter(`From **${message.author.tag} (${message.author.id})**`)
-    client.channels.get("518174050372157500").send({embed:iiMo});
-    }
-});
-
 client.on("message", message => {
     var args = message.content.substring(prefix.length).split(" ");
     if (message.content.startsWith(prefix + "clear")) {
