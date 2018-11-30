@@ -2056,23 +2056,6 @@ client.on('guildMemberAdd', member => {
   }); 
 });
 
-client.on('message',async message => {
-    if(message.content.startsWith(prefix + "setVoice")) {
-    if(!message.guild.member(message.author).hasPermissions('MANAGE_CHANNELS')) return message.reply('❌ **ليس لديك الصلاحيات الكافية**');
-    if(!message.guild.member(client.user).hasPermissions(['MANAGE_CHANNE
-client.on("message", message => {
-    var prefix = "$"
-    if (!message.content.startsWith(prefix)) return;
-      let command = message.content.split(" ")[0];
-      command = command.slice(prefix.length);
-        if(command === "mcskin") {
-                const args = message.content.split(" ").slice(1).join(" ")
-        if (!args) return message.channel.send("** اكتب اسم اسكنك **");
-        const image = new Discord.Attachment(`https://minotar.net/armor/body/${args}`, "skin.png");
-    message.channel.send(image)
-        }
-    });
-
 client.on('message', message => {
     var prefix = "$"
     let command = message.content.split(" ")[0];
